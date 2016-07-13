@@ -1,0 +1,27 @@
+html {
+
+}
+
+body {
+  color: $font-generic-color;
+  font-family: $font-generic-family;
+  font-size: $font-generic-size;
+  font-weight: $font-generic-weight;
+  line-height: $line-generic-height;
+}
+
+html,
+body,
+#mountpoint {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --font-generic-color: $font-generic-color;
+  --font-detail-color: rgba($font-generic-color, 0.5);
+
+  --border-generic-color: $border-generic-color;
+  --border-beveled-color-top: $border-beveled-color-top;
+  --border-beveled-color-bottom: $border-beveled-color-bottom;
+}

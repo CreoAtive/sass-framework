@@ -1,0 +1,8 @@
+version: "2"
+services:
+  apache:
+    image: eboraas/apache:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./public/:/var/www/html/

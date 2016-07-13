@@ -1,0 +1,9 @@
+a {
+  color: $anchor-color;
+  text-decoration: none;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $anchor-color-hover;
+  }
+}

@@ -1,0 +1,17 @@
+.c-progressbar {
+  background-color: $progressbar-background-color;
+  position: relative;
+
+  &--failure {
+    .progressbar__bar {
+      //background-color: $progressbar-failure-color;
+    }
+  }
+
+  &__bar {
+    background-color: $progressbar-bar-background-color;
+    height: 0.25rem;
+    position: relative;
+    width: 0;
+  }
+}

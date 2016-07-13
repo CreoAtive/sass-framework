@@ -1,0 +1,9 @@
+.o-link {
+  &--alert {
+    color: $link-alert-color;
+
+    &:hover {
+      color: $link-alert-color-hover;
+    }
+  }
+}

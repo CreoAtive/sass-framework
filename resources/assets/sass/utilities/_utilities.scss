@@ -1,0 +1,43 @@
+.u-expand {
+  &--width {
+    width: 100%;
+  }
+
+  &--height {
+    height: 100%;
+  }
+}
+
+.u-spacing {
+  & {
+    margin-top: 1rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &--inside {
+    & {
+      padding-top: 1rem;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.u-gutter {
+  & {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &--inside {
+    & {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}

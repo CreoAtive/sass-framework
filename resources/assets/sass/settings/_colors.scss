@@ -1,0 +1,74 @@
+/**
+*
+* Named Colors
+*
+*/
+/*$shade-darkest: black;
+$shade-dark: #1C1C1E;
+$shade-shadow: lighten(#282b2d, 25);
+$shade-base: darken(white, 35);
+$shade-bright: darken(white, 10);
+$shade-brightest: white;*/
+
+$color-darkest: black;
+$color-dark: #1C1C1E;
+$color-dim: #282b2d;
+$color-base: lighten($color-dim, 25);
+$color-brightest: white;
+
+$color-green: #71bc7e;
+$color-red: #dc5b55;
+$color-yellow: #ffbd5e;
+$color-orange: #FB784A;
+$color-blue: #3092a2;
+
+$color-info: $color-blue;
+$color-alert: $color-red;
+$color-warning: $color-orange;
+$color-success: $color-green;
+
+$color-primary: $color-success;
+$color-secondary: $color-info;
+
+/*
+*
+* Elements
+*
+*/
+$font-generic-color: $color-base;
+
+$anchor-color: $color-success;
+$anchor-color-hover: darken($anchor-color, 25);
+
+$theme-paint-dark-background-color: $color-dark;
+$theme-paint-dark-color: lighten($color-base, 35);
+
+$theme-paint-dim-background-color: $color-dim;
+$theme-paint-dim-color: lighten($color-base, 35);
+
+/**
+*
+* Objects
+*
+*/
+$link-alert-color: $color-alert;
+$link-alert-color-hover: darken($link-alert-color, 25);
+
+/**
+*
+* Themes
+*
+*/
+$border-generic-color: $color-base;
+$border-beveled-color-top: rgba($color-brightest, 0.25);
+$border-beveled-color-bottom: $color-darkest;
+
+/**
+*
+* Components
+*
+*/
+$border-dragndrop-color: $border-generic-color;
+
+$progressbar-background-color: $color-base;
+$progressbar-bar-background-color: $color-success;

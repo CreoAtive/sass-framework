@@ -1,0 +1,11 @@
+/*
+*
+* Calculate rem from generic font size
+*
+* @param number $size
+* @return number
+*/
+@function rem-calc($size) {
+  $remSize: $size / $font-generic-size;
+  @return #{$remSize}rem;
+}

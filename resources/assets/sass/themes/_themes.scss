@@ -1,0 +1,67 @@
+.t-paint {
+  &--dark {
+    --font-generic-color: $theme-paint-dark-color;
+    --font-detail-color: rgba($theme-paint-dark-color, 0.5);
+
+    background-color: $theme-paint-dark-background-color;
+  }
+
+  &--dim {
+    --font-generic-color: $theme-paint-dim-color;
+    --font-detail-color: rgba($theme-paint-dim-color, 0.5);
+
+    background-color: $theme-paint-dim-background-color;
+  }
+}
+
+.t-shadow {
+  &--outside {
+    box-shadow: 0 0.125rem 0.25rem rgba(black, 0.75);
+  }
+}
+
+.t-font {
+  &--detail {
+    color: var(--font-detail-color);
+    font-size: $font-detail-size;
+  }
+
+  &--emphasis {
+    font-weight: bold;
+  }
+}
+
+.t-separator {
+  & > * {
+    border-bottom-width: 0;
+    border-color: var(--border-generic-color);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: $border-separator-width;
+    border-style: $border-separator-style;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  &--beveled {
+    & > * {
+      border-bottom-color: var(--border-beveled-color-bottom);
+      border-bottom-width: $border-separator-width;
+      border-left-width: 0;
+      border-right-width: 0;
+      border-style: $border-separator-style;
+      border-top-color: var(--border-beveled-color-top);
+      border-top-width: $border-separator-width;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
