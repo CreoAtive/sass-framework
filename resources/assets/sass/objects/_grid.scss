@@ -42,5 +42,9 @@
     &--expand {
       flex: 1 0 auto;
     }
+
+    &--fixed {
+      flex: 0 0 auto;
+    }
   }
 }

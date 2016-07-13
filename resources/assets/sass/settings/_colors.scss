@@ -13,6 +13,7 @@ $shade-brightest: white;*/
 $color-darkest: black;
 $color-dark: #1C1C1E;
 $color-dim: #282b2d;
+$color-ice: darken(white, 5);
 $color-base: lighten($color-dim, 25);
 $color-brightest: white;
 
@@ -30,21 +31,27 @@ $color-success: $color-green;
 $color-primary: $color-success;
 $color-secondary: $color-info;
 
+/**
+*
+* Generic
+*
+*/
+$font-generic-color: $color-base;
+
 /*
 *
 * Elements
 *
 */
-$font-generic-color: $color-base;
+
+$input-color: $color-base;
 
 $anchor-color: $color-success;
 $anchor-color-hover: darken($anchor-color, 25);
 
-$theme-paint-dark-background-color: $color-dark;
-$theme-paint-dark-color: lighten($color-base, 35);
-
-$theme-paint-dim-background-color: $color-dim;
-$theme-paint-dim-color: lighten($color-base, 35);
+$button-color: $color-brightest;
+$button-background-color: $color-success;
+$button-background-color-hover: darken($color-success, 10);
 
 /**
 *
@@ -53,15 +60,31 @@ $theme-paint-dim-color: lighten($color-base, 35);
 */
 $link-alert-color: $color-alert;
 $link-alert-color-hover: darken($link-alert-color, 25);
+$link-warning-color: $color-warning;
+$link-warning-color-hover: darken($link-warning-color, 25);
+$link-neutral-color: $color-base;
+$link-neutral-color-hover: darken($link-neutral-color, 25);
+
+$picture-background-color: $color-ice;
+
+$icon-generic-fill-color: $color-info;
 
 /**
 *
 * Themes
 *
 */
+$theme-paint-dark-background-color: $color-dark;
+$theme-paint-dark-color: lighten($color-base, 35);
+
+$theme-paint-dim-background-color: $color-dim;
+$theme-paint-dim-color: lighten($color-base, 35);
+
+$theme-paint-ice-background-color: $color-ice;
+
 $border-generic-color: $color-base;
 $border-beveled-color-top: rgba($color-brightest, 0.25);
-$border-beveled-color-bottom: $color-darkest;
+$border-beveled-color-bottom: rgba($color-darkest, 0.25);
 
 /**
 *
@@ -72,3 +95,5 @@ $border-dragndrop-color: $border-generic-color;
 
 $progressbar-background-color: $color-base;
 $progressbar-bar-background-color: $color-success;
+
+$tag-color: $color-brightest;

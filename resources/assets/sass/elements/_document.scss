@@ -2,12 +2,12 @@ html {
 
 }
 
-body {
+html, body {
   color: $font-generic-color;
   font-family: $font-generic-family;
   font-size: $font-generic-size;
   font-weight: $font-generic-weight;
-  line-height: $line-generic-height;
+  line-height: $font-generic-line-height;
 }
 
 html,
@@ -24,4 +24,6 @@ body,
   --border-generic-color: $border-generic-color;
   --border-beveled-color-top: $border-beveled-color-top;
   --border-beveled-color-bottom: $border-beveled-color-bottom;
+
+  --icon-fill-color: $icon-generic-fill-color;
 }

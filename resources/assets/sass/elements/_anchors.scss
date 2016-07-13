@@ -1,9 +1,13 @@
 a {
-  color: $anchor-color;
+  --anchor-color: $anchor-color;
+
+  color: var(--anchor-color);
   text-decoration: none;
   transition: color 150ms ease;
 
   &:hover {
-    color: $anchor-color-hover;
+    --anchor-color: $anchor-color-hover;
+
+    color: var(--anchor-color);
   }
 }

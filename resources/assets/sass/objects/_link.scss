@@ -1,9 +1,35 @@
 .o-link {
   &--alert {
-    color: $link-alert-color;
+    --icon-fill-color: $link-alert-color;
+    --anchor-color: $link-alert-color;
 
     &:hover {
-      color: $link-alert-color-hover;
+      --icon-fill-color: $link-alert-color-hover;
+      --anchor-color: $link-alert-color-hover;
     }
+  }
+
+  &--warning {
+    --icon-fill-color: $link-warning-color;
+    --anchor-color: $link-warning-color;
+
+    &:hover {
+      --icon-fill-color: $link-warning-color-hover;
+      --anchor-color: $link-warning-color-hover;
+    }
+  }
+
+  &--neutral {
+    --icon-fill-color: $link-neutral-color;
+    --anchor-color: $link-neutral-color;
+
+    &:hover {
+      --icon-fill-color: $link-neutral-color-hover;
+      --anchor-color: $link-neutral-color-hover;
+    }
+  }
+
+  &--icon {
+    //line-height: 0;
   }
 }

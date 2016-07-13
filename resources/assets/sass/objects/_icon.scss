@@ -1,0 +1,27 @@
+.o-icon {
+  display: inline-block;
+  fill: var(--icon-fill-color);
+  height: 1rem;
+  width: 1rem;
+
+  transition: fill 150ms ease;
+
+  &--small {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  &--medium {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &--large {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  & ~ * {
+    margin-left: 0.5rem;
+  }
+}

@@ -2,8 +2,8 @@
   color: var(--font-generic-color);
 
   &__item {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: $filequeue-item-padding;
+    padding-bottom: $filequeue-item-padding;
   }
 
   &__detail {

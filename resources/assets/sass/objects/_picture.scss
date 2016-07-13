@@ -1,0 +1,27 @@
+.o-picture {
+  --height: rem-calc(128px);
+
+  background-color: $picture-background-color;
+  line-height: 0;
+
+  img {
+    width: auto;
+    height: var(--height);
+  }
+
+  &--tiny {
+    --height: rem-calc(64px);
+  }
+
+  &--small {
+    //--height: rem-calc(128px);
+  }
+
+  &--medium {
+    --height: rem-calc(256px);
+  }
+
+  &--large {
+    --height: rem-calc(512px);
+  }
+}

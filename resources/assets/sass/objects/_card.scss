@@ -1,0 +1,17 @@
+.o-cards {
+  padding: $card-spacing;
+
+  &__item {
+    padding: $card-spacing;
+  }
+}
+
+.o-card {
+  box-shadow: $box-shadow-generic;
+  padding: $card-padding;
+
+  &__picture {
+    min-width: rem-calc(128px);
+    min-height: rem-calc(128px);
+  }
+}

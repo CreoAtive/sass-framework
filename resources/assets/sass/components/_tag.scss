@@ -1,0 +1,63 @@
+.c-tags {
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+
+  &__item {
+    margin: 0.5rem;
+  }
+}
+
+.c-tag {
+  border-radius: $tag-border-radius;
+  color: $tag-color;
+  display: inline-block;
+  padding: $tag-padding-vertical $tag-padding-horizontal * 0.5;
+
+  &__remove {
+    background-color: $color-brightest;
+    border-radius: 100%;
+    display: inline-block;
+    height: 1rem;
+    line-height: 1rem;
+    margin-left: 0.5rem;
+    width: 1rem;
+    text-align: center;
+
+    .o-icon {
+    }
+  }
+
+  /**
+  *
+  * ids
+  *
+  */
+  $lighten-amount: 0;
+  $tag-color: $color-info;
+  $tags-count: 10;
+  $tags-chunks: 3;
+
+  @for $i from 1 through $tags-count {
+    $lighten-amount: $lighten-amount + ($tags-count / $tags-chunks);
+
+    @if $i % $tags-chunks == 0 {
+      $lighten-amount: 0;
+    }
+
+    @if $i == $tags-chunks {
+      $tag-color: $color-success;
+    }
+
+    @if $i == $tags-chunks * 2 {
+      $tag-color: $color-warning;
+    }
+
+    @if $i == $tags-chunks * 3 {
+      $tag-color: $color-alert;
+    }
+
+    &--#{$i} {
+      background-color: lighten($tag-color, $lighten-amount);
+    }
+  }
+}

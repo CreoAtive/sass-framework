@@ -12,11 +12,15 @@
 
     background-color: $theme-paint-dim-background-color;
   }
+
+  &--ice {
+    background-color: $theme-paint-ice-background-color;
+  }
 }
 
 .t-shadow {
   &--outside {
-    box-shadow: 0 0.125rem 0.25rem rgba(black, 0.75);
+    box-shadow: $box-shadow-generic;
   }
 }
 

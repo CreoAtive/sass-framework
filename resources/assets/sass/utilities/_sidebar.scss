@@ -1,0 +1,17 @@
+.u-sidebar {
+  &--tiny {
+    width: 4rem;
+  }
+
+  &--small {
+    width: 8rem;
+  }
+
+  &--medium {
+    width: 16rem;
+  }
+
+  &--large {
+    width: 32rem;
+  }
+}

@@ -1,3 +1,6 @@
+@import 'sidebar';
+@import 'menubar';
+
 .u-expand {
   &--width {
     width: 100%;
@@ -9,17 +12,14 @@
 }
 
 .u-spacing {
-  & {
-    margin-top: 1rem;
+  padding-top: $spacing-generic;
+  padding-bottom: $spacing-generic;
+}
 
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  &--inside {
-    & {
-      padding-top: 1rem;
+.u-rythm {
+  &--vertical {
+    & > * {
+      padding-top: $spacing-generic;
 
       &:first-child {
         padding-top: 0;
@@ -29,15 +29,15 @@
 }
 
 .u-gutter {
-  & {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+  padding-left: $gutter-generic;
+  padding-right: $gutter-generic;
+}
 
-  &--inside {
-    & {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
+.u-overflow {
+  overflow: auto;
+
+  &--vertical {
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }

@@ -6,6 +6,8 @@
 $font-generic-family: Arial, 'sans-serif';
 $font-generic-weight: normal;
 
+$font-form-label-weight: bold;
+
 /**
 *
 * Borders
@@ -16,3 +18,5 @@ $border-generic-style: solid;
 $border-separator-style: $border-generic-style;
 
 $border-dragndrop-style: dashed;
+
+$box-shadow-generic: 0 0.125rem 0.25rem rgba(black, 0.25);

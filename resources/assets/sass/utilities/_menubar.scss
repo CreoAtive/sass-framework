@@ -1,0 +1,17 @@
+.u-menubar {
+  &--tiny {
+    height: 1rem;
+  }
+
+  &--small {
+    height: 2rem;
+  }
+
+  &--medium {
+    height: 4rem;
+  }
+
+  &--large {
+    height: 8rem;
+  }
+}
