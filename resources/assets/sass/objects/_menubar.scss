@@ -1,0 +1,33 @@
+$arrow-size: 0.5rem;
+
+.o-menubar {
+  //padding: 1rem 0;
+
+  &__item {
+    //margin: 0 1rem;
+
+    .o-link {
+      display: block;
+      padding: 1rem;
+      position: relative;
+
+      &--active {
+        &:after {
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          position: absolute;
+          pointer-events: none;
+          top: 100%;
+          width: 0;
+
+          border-right: $arrow-size solid transparent;
+          border-top: $arrow-size solid var(--paint-background-color);
+          border-bottom: $arrow-size solid transparent;
+          border-left: $arrow-size solid transparent;
+          left: calc(50% - #{$arrow-size});
+        }
+      }
+    }
+  }
+}

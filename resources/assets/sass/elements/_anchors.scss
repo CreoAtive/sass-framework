@@ -1,6 +1,4 @@
 a {
-  --anchor-color: $anchor-color;
-
   color: var(--anchor-color);
   text-decoration: none;
   transition: color 150ms ease;
@@ -8,6 +6,6 @@ a {
   &:hover {
     --anchor-color: $anchor-color-hover;
 
-    color: var(--anchor-color);
+    color: var(--anchor-color-hover);
   }
 }

@@ -19,10 +19,20 @@
 .u-rythm {
   &--vertical {
     & > * {
-      padding-top: $spacing-generic;
+      margin-top: $spacing-generic !important;
 
       &:first-child {
-        padding-top: 0;
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  &--horizontal {
+    & > * {
+      margin-left: $spacing-generic !important;
+
+      &:first-child {
+        margin-left: 0 !important;
       }
     }
   }

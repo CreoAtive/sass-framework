@@ -30,7 +30,7 @@ $resources = [
 
 ?>
 
-<div class="t-paint--ice">
+<div class="t-paint--metallic">
 
   <div class="o-row u-gutter u-spacing">
 

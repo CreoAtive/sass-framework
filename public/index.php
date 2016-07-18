@@ -47,7 +47,7 @@
 
             </div>
 
-            <div class="o-grid__item o-grid__item--fixed u-sidebar--large t-paint--ice t-shadow--outside u-overflow--vertical">
+            <div class="o-grid__item o-grid__item--fixed u-sidebar--large t-paint--metallic t-shadow--outside u-overflow--vertical">
 
               <?php include('views/resources_edit.php'); ?>
 

@@ -45,60 +45,270 @@ $tags = [
 
 ?>
 
-<div class="o-row u-gutter">
+<div class="u-rythm--vertical">
 
-  <h1>edit</h1>
+  <div class="o-row u-gutter">
 
-  <div class="o-float c-tags">
+    <h1>edit</h1>
 
-    <?php foreach($tags as $tag): ?>
+    <div class="o-float c-tags">
 
-    <div class="o-float__item c-tags__item c-tag c-tag--<?= $tag['id'] ?>">
+      <?php foreach($tags as $tag): ?>
 
-      <?= $tag['label'] ?>
+      <div class="o-float__item c-tags__item c-tag c-tag--<?= $tag['id'] ?>">
 
-      <a class="o-link o-link--neutral o-link--icon c-tag__remove" href="#">
+        <?= $tag['label'] ?>
 
-        <svg class="o-icon o-icon--small">
+        <a class="o-link o-link--neutral o-link--icon c-tag__action" href="#">
 
-          <use xlink:href="#cross" />
+          <svg class="o-icon o-icon--tiny">
 
-        </svg>
+            <use xlink:href="#cross" />
 
-      </a>
+          </svg>
+
+        </a>
+
+      </div>
+
+      <?php endforeach; ?>
 
     </div>
 
-    <?php endforeach; ?>
+    <form class="o-form u-rythm--vertical">
+
+      <div class="o-form__row">
+
+        <div class="o-form__field">
+
+          <label for="label">Label</label>
+
+          <input type="text" name="label" value="" placeholder="Label" />
+
+        </div>
+
+      </div>
+
+      <div class="o-form__row">
+
+        <div class="o-form__field">
+
+          <button>Save</button>
+
+          <a href="#" class="o-link o-link--alert">Cancel</a>
+
+        </div>
+
+      </div>
+
+    </form>
 
   </div>
 
-  <form class="o-form u-rythm--vertical">
+  <div class="t-paint--ice">
 
-    <div class="o-form__row">
+    <ul class="o-menubar o-list o-list--inline">
 
-      <div class="o-form__field">
+      <li class="o-menubar__item o-list__item"><a href="#" class="o-link o-link--active">Diffuse</a></li>
 
-        <label for="label">Label</label>
+      <li class="o-menubar__item o-list__item"><a href="#" class="o-link">Bump</a></li>
 
-        <input type="text" name="label" value="" placeholder="Label" />
+    </ul>
 
-      </div>
+  </div>
 
-    </div>
+  <div class="">
 
-    <div class="o-form__row">
+    <?php
 
-      <div class="o-form__field">
+    $files = [
+      [
+        'id' => 1,
+        'filesize' => 512,
+        'extension' => [
+          'id' => 1,
+          'label' => 'jpg',
+          'mimetype' => 'image/jpeg'
+        ],
+        'metadata' => [
+          'width' => 1024,
+          'height' => 1024
+        ]
+      ],
+      [
+        'id' => 2,
+        'filesize' => 768,
+        'extension' => [
+          'id' => 1,
+          'label' => 'jpg',
+          'mimetype' => 'image/jpeg'
+        ],
+        'metadata' => [
+          'width' => 2048,
+          'height' => 2048
+        ]
+      ],
+      [
+        'id' => 3,
+        'filesize' => 2048,
+        'extension' => [
+          'id' => 2,
+          'label' => 'tif',
+          'mimetype' => 'image/tif'
+        ],
+        'metadata' => [
+          'width' => 4096,
+          'height' => 4096
+        ]
+      ],
+      [
+        'id' => 3,
+        'filesize' => 2048,
+        'extension' => [
+          'id' => 2,
+          'label' => 'tif',
+          'mimetype' => 'image/tif'
+        ],
+        'metadata' => [
+          'width' => 4096,
+          'height' => 4096
+        ]
+      ]
+    ];
 
-        <button>Save</button>
+    $groups = [];
 
-        <a href="#" class="o-link o-link--alert">Cancel</a>
+    for ($i = 0; $i < rand(2, 4); $i++) {
+      $versions = [];
 
-      </div>
+      for ($t = 0; $t < rand(1, 6); $t++) {
+        array_push($versions, $files[array_rand($files)]);
+      }
 
-    </div>
+      array_push($groups, $versions);
+    }
 
-  </form>
+    ?>
+
+    <ul class="t-separator--beveled o-list o-list--nostyle c-resourcelist">
+
+      <?php foreach (array_values($groups) as $group): ?>
+
+      <?php
+
+      $first_file_version = count($group);
+      $first_file = array_shift($group);
+
+      ?>
+
+      <li class="c-resourcelist__item">
+
+        <div class="o-grid o-grid--align-items-center u-rythm--horizontal u-gutter u-spacing">
+
+          <div class="o-grid__item o-grid__item--fixed">
+
+            <div class="o-picture o-picture--tiny o-picture--framed">
+
+              <div class="o-picture__item"></div>
+
+            </div>
+
+          </div>
+
+          <div class="o-grid__item">
+
+            <div class="t-font--emphasis">
+
+              resource.diffuse.<?= $first_file['extension']['label'] ?>
+
+              <?= $first_file['metadata']['width'] ?>x<?= $first_file['metadata']['height'] ?>
+
+            </div>
+
+            <div class="t-font--detail">
+
+              v<?= sprintf('%03d', $first_file_version) ?> <?= $first_file['extension']['mimetype'] ?> <?= $first_file['filesize'] ?>kb
+
+            </div>
+
+          </div>
+
+          <div class="o-grid__item o-grid__item--fixed">
+
+            <ul class="o-list o-list--inline u-rythm--horizontal">
+
+              <li class="o-list__item">
+
+                <a href="#" class="o-link o-link--info" title="Show Versions">
+
+                  <svg class="o-icon o-icon--small">
+
+                    <use xlink:href="#list" />
+
+                  </svg>
+
+                </a>
+
+              </li>
+
+              <li class="o-list__item">
+
+                <a href="#" class="o-link o-link--info" title="Add Version">
+
+                  <svg class="o-icon o-icon--small">
+
+                    <use xlink:href="#plus" />
+
+                  </svg>
+
+                </a>
+
+              </li>
+
+              <li class="o-list__item">
+
+                <a href="#" class="o-link o-link--alert" title="Delete File">
+
+                  <svg class="o-icon o-icon--small">
+
+                    <use xlink:href="#bin" />
+
+                  </svg>
+
+                </a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <?php if (count($group)): ?>
+
+        <ul class="t-paint--phantom t-shadow--inside u-spacing o-list o-list--nostyle u-rythm--vertical">
+
+          <?php foreach (array_values($group) as $id => $file): ?>
+
+          <li class="u-gutter">
+
+            v<?= sprintf('%03d', count($group) - $id) ?> <?= $file['extension']['mimetype'] ?> <?= $file['metadata']['width'] ?>x<?= $file['metadata']['height'] ?>
+
+          </li>
+
+          <?php endforeach; ?>
+
+        </ul>
+
+        <?php endif; ?>
+
+      </li>
+
+      <?php endforeach; ?>
+
+    </ul>
+
+  </div>
 
 </div>

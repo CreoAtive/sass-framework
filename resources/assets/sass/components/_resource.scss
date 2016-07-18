@@ -1,0 +1,8 @@
+$c-resource-name: c-resource;
+$c-resourcelist-name: c-resourcelist;
+
+.#{$c-resourcelist-name} {
+  &__item {
+    //padding-top: 1rem;
+  }
+}

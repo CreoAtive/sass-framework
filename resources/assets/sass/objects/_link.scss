@@ -1,7 +1,19 @@
 .o-link {
+  &--info {
+    --icon-fill-color: $color-info;
+    --anchor-color: $color-info;
+    --anchor-color-hover: darken($color-info, 25);
+
+    &:hover {
+      --icon-fill-color: darken($color-info, 25);
+      --anchor-color: darken($color-info, 25);
+    }
+  }
+
   &--alert {
     --icon-fill-color: $link-alert-color;
     --anchor-color: $link-alert-color;
+    --anchor-color-hover: $link-alert-color-hover;
 
     &:hover {
       --icon-fill-color: $link-alert-color-hover;
@@ -12,6 +24,7 @@
   &--warning {
     --icon-fill-color: $link-warning-color;
     --anchor-color: $link-warning-color;
+    --anchor-color-hover: $link-warning-color-hover;
 
     &:hover {
       --icon-fill-color: $link-warning-color-hover;
@@ -26,6 +39,14 @@
     &:hover {
       --icon-fill-color: $link-neutral-color-hover;
       --anchor-color: $link-neutral-color-hover;
+    }
+  }
+
+  &--active {
+    color: var(--anchor-color-active);
+
+    &:hover {
+      color: var(--anchor-color-active);
     }
   }
 

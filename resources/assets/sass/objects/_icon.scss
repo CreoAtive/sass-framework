@@ -6,6 +6,11 @@
 
   transition: fill 150ms ease;
 
+  &--tiny {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
   &--small {
     height: 1rem;
     width: 1rem;

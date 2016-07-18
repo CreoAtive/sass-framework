@@ -11,17 +11,21 @@
   border-radius: $tag-border-radius;
   color: $tag-color;
   display: inline-block;
-  padding: $tag-padding-vertical $tag-padding-horizontal * 0.5;
+  padding: $tag-padding-vertical $tag-padding-horizontal * 2.5 $tag-padding-vertical $tag-padding-horizontal * 0.5;
+  position: relative;
 
-  &__remove {
+  &__action {
     background-color: $color-brightest;
     border-radius: 100%;
     display: inline-block;
     height: 1rem;
-    line-height: 1rem;
+    line-height: 0;
     margin-left: 0.5rem;
+    padding: 0.25rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
     width: 1rem;
-    text-align: center;
 
     .o-icon {
     }
@@ -32,32 +36,23 @@
   * ids
   *
   */
-  $lighten-amount: 0;
-  $tag-color: $color-info;
   $tags-count: 10;
-  $tags-chunks: 3;
 
-  @for $i from 1 through $tags-count {
-    $lighten-amount: $lighten-amount + ($tags-count / $tags-chunks);
+  $tag-colors: $color-info, $color-success, $color-alert, $color-warning;
 
-    @if $i % $tags-chunks == 0 {
-      $lighten-amount: 0;
-    }
+  @for $i from 0 through $tags-count {
+    $tag-color-id: floor((length($tag-colors) - 1) / ($tags-count - 1) * $i) + 1;
 
-    @if $i == $tags-chunks {
-      $tag-color: $color-success;
-    }
+    //@debug $tag-color-id;
 
-    @if $i == $tags-chunks * 2 {
-      $tag-color: $color-warning;
-    }
+    $tag-color: nth($tag-colors, $tag-color-id);
 
-    @if $i == $tags-chunks * 3 {
-      $tag-color: $color-alert;
-    }
+    &--#{$i + 1} {
+      $darken-amount: $i % round($tags-count / length($tag-colors));
 
-    &--#{$i} {
-      background-color: lighten($tag-color, $lighten-amount);
+      //@debug $darken-amount;
+
+      background-color: darken($tag-color, $darken-amount * 5);
     }
   }
 }

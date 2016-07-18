@@ -1,0 +1,22 @@
+$class-name: o-list;
+
+.#{$class-name} {
+  margin: 0;
+
+  &--nostyle {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &--inline {
+    @include clearfix;
+
+    list-style: none;
+    //margin: 0;
+    padding-left: 0;
+
+    & > .#{$class-name}__item {
+      float: left;
+    }
+  }
+}

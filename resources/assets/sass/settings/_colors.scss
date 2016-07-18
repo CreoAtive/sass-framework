@@ -13,7 +13,7 @@ $shade-brightest: white;*/
 $color-darkest: black;
 $color-dark: #1C1C1E;
 $color-dim: #282b2d;
-$color-ice: darken(white, 5);
+$color-metallic: darken(white, 5);
 $color-base: lighten($color-dim, 25);
 $color-brightest: white;
 
@@ -65,7 +65,7 @@ $link-warning-color-hover: darken($link-warning-color, 25);
 $link-neutral-color: $color-base;
 $link-neutral-color-hover: darken($link-neutral-color, 25);
 
-$picture-background-color: $color-ice;
+$picture-background-color: $color-metallic;
 
 $icon-generic-fill-color: $color-info;
 
@@ -80,7 +80,7 @@ $theme-paint-dark-color: lighten($color-base, 35);
 $theme-paint-dim-background-color: $color-dim;
 $theme-paint-dim-color: lighten($color-base, 35);
 
-$theme-paint-ice-background-color: $color-ice;
+$theme-paint-metallic-background-color: $color-metallic;
 
 $border-generic-color: $color-base;
 $border-beveled-color-top: rgba($color-brightest, 0.25);
