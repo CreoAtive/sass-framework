@@ -99,3 +99,9 @@
     overflow-y: auto;
   }
 }
+
+.u-display {
+  &--inline-block {
+    display: inline-block !important;
+  }
+}

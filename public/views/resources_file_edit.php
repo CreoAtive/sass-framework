@@ -34,9 +34,37 @@
 
   </div>
 
-  <div class="">
+  <div class="c-fileupload">
 
-    <?php include('views/resources_file_edit_preview.php'); ?>
+    <div class="c-dragndrop">
+
+      <div class="o-picture o-picture--responsive-landscape o-picture--framed">
+
+        <div class="o-picture__wrapper">
+
+          <div class="o-picture__frame">
+
+            <div class="o-picture__item">
+
+              <div class="o-picture__icon">
+
+                <svg class="o-icon o-icon--medium">
+
+                  <use xlink:href="#image" />
+
+                </svg>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 

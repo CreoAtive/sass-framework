@@ -1,4 +1,9 @@
-<?php include('data/files.php'); ?>
+<?php
+
+include('data/files.php');
+include('data/tags.php');
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -66,6 +71,42 @@
                     <div class="u-expand--height u-overflow--vertical">
 
                       <?php include('views/resources_file_edit.php'); ?>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div id="edit-resource" class="o-overlay">
+
+                <div class="o-overlay__frame">
+
+                  <div class="o-overlay__window t-paint--metallic t-shadow--outside">
+
+                    <div class="u-expand--height u-overflow--vertical">
+
+                      <?php include('views/edit_resource.php'); ?>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div id="edit-tags" class="o-overlay">
+
+                <div class="o-overlay__frame">
+
+                  <div class="o-overlay__window t-paint--metallic t-shadow--outside">
+
+                    <div class="u-expand--height u-overflow--vertical">
+
+                      <?php include('views/edit_tags.php'); ?>
 
                     </div>
 

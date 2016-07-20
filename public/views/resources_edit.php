@@ -1,48 +1,5 @@
 <?php
 
-$tags = [
-  [
-    'id' => 1,
-    'label' => 'tileable'
-  ],
-  [
-    'id' => 2,
-    'label' => 'soil'
-  ],
-  [
-    'id' => 3,
-    'label' => 'grass'
-  ],
-  [
-    'id' => 4,
-    'label' => 'mud'
-  ],
-  [
-    'id' => 5,
-    'label' => 'grunge'
-  ],
-  [
-    'id' => 6,
-    'label' => 'dirt'
-  ],
-  [
-    'id' => 7,
-    'label' => 'stone'
-  ],
-  [
-    'id' => 8,
-    'label' => 'rock'
-  ],
-  [
-    'id' => 9,
-    'label' => 'grass'
-  ],
-  [
-    'id' => 10,
-    'label' => 'marble'
-  ]
-];
-
 $resource_name = 'Awesome-Resource-01';
 
 ?>
@@ -73,41 +30,37 @@ $resource_name = 'Awesome-Resource-01';
 
   <div class="u-gutter">
 
-    <h1>Edit <?= $resource_name ?></h1>
+    <h1>
 
-  </div>
+      <?= $resource_name ?>
 
-  <div class="u-gutter">
+      <a href="#edit-resource" class="o-link o-link--info" title="Edit Resource">
 
-    <h2>General</h2>
+        <svg class="o-icon o-icon--small">
 
-    <form class="o-form u-rythm--vertical">
+          <use xlink:href="#pencil" />
 
-      <div class="o-form__row o-form__row--collapse o-grid o-grid--align-items-flex-end">
+        </svg>
 
-        <div class="o-form__field o-grid__item">
+      </a>
 
-          <label for="label">Name</label>
+    </h1>
 
-          <input type="text" name="label" value="<?= $resource_name ?>" placeholder="Label" />
+    <h2>
 
-        </div>
+      Tags
 
-        <div class="o-form__field t-text--align-right o-grid__item--fixed">
+      <a href="#edit-tags" class="o-link o-link--info" title="Edit Tags">
 
-          <button>Save</button>
+        <svg class="o-icon o-icon--small">
 
-        </div>
+          <use xlink:href="#pencil" />
 
-      </div>
+        </svg>
 
-    </form>
+      </a>
 
-  </div>
-
-  <div class="u-gutter">
-
-    <h2>Tags</h2>
+    </h2>
 
     <div class="o-float c-tags">
 
@@ -116,16 +69,6 @@ $resource_name = 'Awesome-Resource-01';
       <div class="o-float__item c-tags__item c-tag c-tag--<?= $tag['id'] ?>">
 
         <?= $tag['label'] ?>
-
-        <a class="o-link o-link--neutral o-link--icon c-tag__action" href="#">
-
-          <svg class="o-icon o-icon--tiny">
-
-            <use xlink:href="#cross" />
-
-          </svg>
-
-        </a>
 
       </div>
 
@@ -137,31 +80,21 @@ $resource_name = 'Awesome-Resource-01';
 
   <div class="u-gutter">
 
-    <form class="o-form">
+    <h2>
 
-      <div class="o-form__row o-form__row--collapse o-grid">
+      Files
 
-        <div class="o-form__field o-grid__item o-grid__item--expand">
+      <a href="#upload-files" class="o-link o-link--info" title="Upload Files">
 
-          <input type="text" name="tag" value="" placeholder="Tag" />
+        <svg class="o-icon o-icon--small">
 
-        </div>
+          <use xlink:href="#upload" />
 
-        <div class="o-form__field o-grid__item o-grid__item--fixed">
+        </svg>
 
-          <button>Add</button>
+      </a>
 
-        </div>
-
-      </div>
-
-    </form>
-
-  </div>
-
-  <div class="u-gutter">
-
-    <h2>Files</h2>
+    </h2>
 
   </div>
 
