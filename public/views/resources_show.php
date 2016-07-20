@@ -73,35 +73,7 @@ $resource_name = 'Awesome-Resource-01';
 
   <div class="u-gutter">
 
-    <h1>Edit <?= $resource_name ?></h1>
-
-  </div>
-
-  <div class="u-gutter">
-
-    <h2>General</h2>
-
-    <form class="o-form u-rythm--vertical">
-
-      <div class="o-form__row o-form__row--collapse o-grid o-grid--align-items-flex-end">
-
-        <div class="o-form__field o-grid__item">
-
-          <label for="label">Name</label>
-
-          <input type="text" name="label" value="<?= $resource_name ?>" placeholder="Label" />
-
-        </div>
-
-        <div class="o-form__field t-text--align-right o-grid__item--fixed">
-
-          <button>Save</button>
-
-        </div>
-
-      </div>
-
-    </form>
+    <h1><?= $resource_name ?></h1>
 
   </div>
 
@@ -117,45 +89,11 @@ $resource_name = 'Awesome-Resource-01';
 
         <?= $tag['label'] ?>
 
-        <a class="o-link o-link--neutral o-link--icon c-tag__action" href="#">
-
-          <svg class="o-icon o-icon--tiny">
-
-            <use xlink:href="#cross" />
-
-          </svg>
-
-        </a>
-
       </div>
 
       <?php endforeach; ?>
 
     </div>
-
-  </div>
-
-  <div class="u-gutter">
-
-    <form class="o-form">
-
-      <div class="o-form__row o-form__row--collapse o-grid">
-
-        <div class="o-form__field o-grid__item o-grid__item--expand">
-
-          <input type="text" name="tag" value="" placeholder="Tag" />
-
-        </div>
-
-        <div class="o-form__field o-grid__item o-grid__item--fixed">
-
-          <button>Add</button>
-
-        </div>
-
-      </div>
-
-    </form>
 
   </div>
 
@@ -292,34 +230,6 @@ $resource_name = 'Awesome-Resource-01';
                   <svg class="o-icon o-icon--small">
 
                     <use xlink:href="#download" />
-
-                  </svg>
-
-                </a>
-
-              </li>
-
-              <li class="o-list__item">
-
-                <a href="#edit-file" class="o-link o-link--info" title="Edit File">
-
-                  <svg class="o-icon o-icon--small">
-
-                    <use xlink:href="#pencil" />
-
-                  </svg>
-
-                </a>
-
-              </li>
-
-              <li class="o-list__item">
-
-                <a href="#" class="o-link o-link--alert" title="Delete File">
-
-                  <svg class="o-icon o-icon--small">
-
-                    <use xlink:href="#bin" />
 
                   </svg>
 

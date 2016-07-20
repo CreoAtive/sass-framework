@@ -53,25 +53,7 @@
 
               <div class="u-expand--height u-overflow--vertical">
 
-                <?php include('views/resources_edit.php'); ?>
-
-              </div>
-
-              <div id="edit-file" class="o-overlay">
-
-                <div class="o-overlay__frame">
-
-                  <div class="o-overlay__window t-paint--metallic t-shadow--outside">
-
-                    <div class="u-expand--height u-overflow--vertical">
-
-                      <?php include('views/resources_file_edit.php'); ?>
-
-                    </div>
-
-                  </div>
-
-                </div>
+                <?php include('views/resources_show.php'); ?>
 
               </div>
 

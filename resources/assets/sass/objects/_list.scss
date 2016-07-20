@@ -9,14 +9,15 @@ $class-name: o-list;
   }
 
   &--inline {
-    @include clearfix;
+    //@include clearfix;
 
     list-style: none;
     //margin: 0;
     padding-left: 0;
 
     & > .#{$class-name}__item {
-      float: left;
+      display: inline-block;
+      //float: left;
     }
   }
 }

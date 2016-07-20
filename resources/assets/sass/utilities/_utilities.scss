@@ -11,13 +11,46 @@
   }
 }
 
+.u-stacking {
+  &--foreground {
+    position: relative;
+    z-index: 10;
+  }
+
+  &--midground {
+    position: relative;
+    z-index: 5;
+  }
+}
+
 .u-spacing {
   padding-top: $spacing-generic;
   padding-bottom: $spacing-generic;
+
+  &--tiny {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+[class*="u-rythm--vertical"] {
+  & > * {
+    margin-top: $spacing-generic !important;
+
+    &:first-child {
+      margin-top: 0 !important;
+    }
+  }
 }
 
 .u-rythm {
-  &--vertical {
+  &--vertical-medium {
+    & > * {
+      margin-top: 2rem !important;
+    }
+  }
+
+  /*&--vertical {
     & > * {
       margin-top: $spacing-generic !important;
 
@@ -26,6 +59,16 @@
       }
     }
   }
+
+  &--vertical-medium {
+    & > * {
+      margin-top: 2rem !important;
+
+      &:first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }*/
 
   &--horizontal {
     & > * {
@@ -39,8 +82,13 @@
 }
 
 .u-gutter {
-  padding-left: $gutter-generic;
-  padding-right: $gutter-generic;
+  padding-left: $gutter-generic !important;
+  padding-right: $gutter-generic !important;
+
+  &--tiny {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
 }
 
 .u-overflow {

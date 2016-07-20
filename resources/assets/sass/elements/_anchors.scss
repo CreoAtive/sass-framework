@@ -1,11 +1,15 @@
 a {
+  --icon-fill-color: var(--anchor-color);
+
+  background-color:  var(--anchor-fill-color);
   color: var(--anchor-color);
   text-decoration: none;
-  transition: color 150ms ease;
+  transition: all 150ms ease;
 
   &:hover {
     --anchor-color: $anchor-color-hover;
+    --icon-fill-color: $anchor-color-hover;
 
-    color: var(--anchor-color-hover);
+    color: var(--anchor-color);
   }
 }

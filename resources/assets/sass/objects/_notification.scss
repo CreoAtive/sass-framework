@@ -1,0 +1,20 @@
+$object-notification-name: o-notification;
+
+.#{$object-notification-name} {
+  position: relative;
+
+  &__item {
+    background-color: $color-alert;
+    border-radius: 100%;
+    color: $color-brightest;
+    display: block;
+    font-size: 0.75rem;
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    right: -0.5rem;
+    text-align: center;
+    top: -0.5rem;
+    width: 1rem;
+  }
+}

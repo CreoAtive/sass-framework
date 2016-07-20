@@ -6,8 +6,9 @@
   },
   "devDependencies": {
     "gulp": "*",
-    "laravel-elixir": "*"
+    "laravel-elixir": "*",
+    "laravel-elixir-postcss": "^0.3.6",
+    "precss": "^1.4.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

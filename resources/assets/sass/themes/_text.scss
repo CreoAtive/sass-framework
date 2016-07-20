@@ -1,0 +1,27 @@
+.t-text {
+  &--detail {
+    //color: var(--font-detail-color);
+    font-size: $font-detail-size;
+    line-height: 1.5em;
+  }
+
+  &--emphasis {
+    font-weight: bold;
+  }
+
+  &--align-justify {
+    text-align: justify;
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+}

@@ -1,8 +1,9 @@
-.o-link {
+$object-link-name: o-link;
+
+.#{$object-link-name} {
   &--info {
     --icon-fill-color: $color-info;
     --anchor-color: $color-info;
-    --anchor-color-hover: darken($color-info, 25);
 
     &:hover {
       --icon-fill-color: darken($color-info, 25);
@@ -13,7 +14,6 @@
   &--alert {
     --icon-fill-color: $link-alert-color;
     --anchor-color: $link-alert-color;
-    --anchor-color-hover: $link-alert-color-hover;
 
     &:hover {
       --icon-fill-color: $link-alert-color-hover;
@@ -24,7 +24,6 @@
   &--warning {
     --icon-fill-color: $link-warning-color;
     --anchor-color: $link-warning-color;
-    --anchor-color-hover: $link-warning-color-hover;
 
     &:hover {
       --icon-fill-color: $link-warning-color-hover;
@@ -33,12 +32,12 @@
   }
 
   &--neutral {
-    --icon-fill-color: $link-neutral-color;
-    --anchor-color: $link-neutral-color;
+    --icon-fill-color: lighten(black, 35);
+    --anchor-color: lighten(black, 35);
 
     &:hover {
-      --icon-fill-color: $link-neutral-color-hover;
-      --anchor-color: $link-neutral-color-hover;
+      --icon-fill-color: lighten(black, 50);
+      --anchor-color: lighten(black, 50);
     }
   }
 
@@ -47,6 +46,32 @@
 
     &:hover {
       color: var(--anchor-color-active);
+    }
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--fill {
+    &:hover {
+      --icon-fill-color: white;
+      --anchor-fill-color: var(--anchor-color);
+
+      color: white;
+    }
+  }
+
+  &--filled {
+    --icon-fill-color: white;
+    --anchor-fill-color: var(--anchor-color);
+
+    color: white;
+
+    &:hover {
+      --icon-fill-color: white;
+
+      color: white;
     }
   }
 

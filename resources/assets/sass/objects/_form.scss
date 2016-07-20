@@ -1,0 +1,43 @@
+$object-form-name: o-form;
+
+.#{$object-form-name} {
+  &__row {
+    &--collapse {
+      .#{$object-form-name}__field {
+        input, select, button {
+          border-radius: 0;
+        }
+
+        &:first-child {
+          input, select, button {
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+          }
+        }
+
+        &:last-child {
+          input, select, button {
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__field {
+    position: relative;
+  }
+
+  &__suggestions {
+    background-color: $color-brightest;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    box-shadow: $box-shadow-generic;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+}

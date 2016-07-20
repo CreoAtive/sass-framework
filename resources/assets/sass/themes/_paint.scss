@@ -1,0 +1,43 @@
+.t-paint {
+  &--dark {
+    --font-generic-color: $theme-paint-dark-color;
+    --font-detail-color: rgba($theme-paint-dark-color, 0.5);
+    --paint-background-color:  $theme-paint-dark-background-color;
+
+    background-color: var(--paint-background-color);
+  }
+
+  &--dim {
+    --font-generic-color: $theme-paint-dim-color;
+    --font-detail-color: rgba($theme-paint-dim-color, 0.5);
+    --paint-background-color:  $theme-paint-dim-background-color;
+
+    background-color: var(--paint-background-color);
+  }
+
+  &--metallic {
+    --paint-background-color:  $theme-paint-metallic-background-color;
+
+    background-color: var(--paint-background-color);
+  }
+
+  &--ice {
+    --anchor-color: darken(white, 75);
+    --anchor-color-hover: darken(white, 50);
+    --paint-background-color: lighten(desaturate($color-info, 40), 30);
+
+    background-color: var(--paint-background-color);
+  }
+
+  &--ghost {
+    --paint-background-color: rgba(white, 0.1);
+
+    background-color: var(--paint-background-color);
+  }
+
+  &--phantom {
+    --paint-background-color: rgba(black, 0.1);
+
+    background-color: var(--paint-background-color);
+  }
+}

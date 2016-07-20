@@ -25,9 +25,9 @@
 
         <div class="o-grid__item o-grid__item--expand">
 
-          <div class="c-filequeue__detail t-font--emphasis">Filename01.jpg</div>
+          <div class="c-filequeue__detail t-text--emphasis">Filename01.jpg</div>
 
-          <div class="c-filequeue__detail t-font--detail"><?= $rand_loaded ?>kb / <?= $rand_size ?>kb</div>
+          <div class="c-filequeue__detail t-text--detail"><?= $rand_loaded ?>kb / <?= $rand_size ?>kb</div>
 
         </div>
 

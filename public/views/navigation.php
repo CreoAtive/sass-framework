@@ -1,35 +1,51 @@
-<a class="o-link o-link--neutral" href="#">
+<ul class="o-list o-list--nostyle">
 
-  <svg class="o-icon o-icon--medium">
+  <li class="o-list__item">
 
-    <use xlink:href="#home" />
+    <a class="o-link o-link--info o-link--block o-link--filled u-gutter--tiny u-spacing--tiny t-text--align-center" href="#">
 
-  </svg>
+      <svg class="o-icon o-icon--medium">
 
-  Home
+        <use xlink:href="#home" />
 
-</a>
+      </svg>
 
-<a class="o-link o-link--neutral" href="#">
+      <div class="t-text--detail">Home</div>
 
-  <svg class="o-icon o-icon--medium">
+    </a>
 
-    <use xlink:href="#stack" />
+  </li>
 
-  </svg>
+  <li class="o-list__item">
 
-  Resources
+    <a class="o-link o-link--neutral o-link--block o-link--fill u-gutter--tiny u-spacing--tiny t-text--align-center" href="#">
 
-</a>
+      <svg class="o-icon o-icon--medium">
 
-<a class="o-link o-link--neutral" href="#">
+        <use xlink:href="#stack" />
 
-  <svg class="o-icon o-icon--medium">
+      </svg>
 
-    <use xlink:href="#user" />
+      <div class="t-text--detail">Resources</div>
 
-  </svg>
+    </a>
 
-  Account
+  </li>
 
-</a>
+  <li class="o-list__item">
+
+    <a class="o-link o-link--neutral o-link--block o-link--fill u-gutter--tiny u-spacing--tiny t-text--align-center" href="#">
+
+      <svg class="o-icon o-icon--medium">
+
+        <use xlink:href="#user" />
+
+      </svg>
+
+      <div class="t-text--detail">Account</div>
+
+    </a>
+
+  </li>
+
+</ul>

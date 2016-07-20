@@ -1,13 +1,28 @@
-input {
+input, select {
   border: none;
   border-radius: $input-border-radius;
   color: $input-color;
   font-size: $input-font-size;
-  line-height: $input-line-height;
+  height: 2.5rem;
+  line-height: 1rem;
   //max-width: rem-calc(256px);
   padding-left: $input-padding-horizontal;
   padding-right: $input-padding-horizontal;
-  width: 16rem;
+  width: 100%;
+}
+
+input {
+  //padding-top: 0.75rem;
+  //padding-bottom: 0.75rem;
+}
+
+select {
+
+}
+
+option {
+  padding-left: $input-padding-horizontal;
+  padding-right: $input-padding-horizontal;
 }
 
 label {
@@ -24,9 +39,9 @@ button {
   border: none;
   border-radius: $button-border-radius;
   color: $button-color;
-  cursor: pointer;
   font-size: $button-font-size;
-  line-height: $button-line-height;
+  height: 2.5rem;
+  line-height: 1rem;
   padding-left: $button-padding-horizontal;
   padding-right: $button-padding-horizontal;
 

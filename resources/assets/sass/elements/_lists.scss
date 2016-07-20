@@ -1,0 +1,16 @@
+dl {
+  & > dt {
+    clear: left;
+    float: left;
+    font-weight: bold;
+    width: 50%;
+
+    &:after {
+      content: ':';
+    }
+  }
+
+  & > dd {
+    margin-left: 0;
+  }
+}
